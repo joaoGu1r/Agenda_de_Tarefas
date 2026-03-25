@@ -1,0 +1,27 @@
+---
+
+### 2. .gitignore
+O arquivo `.gitignore` não tem extensão (o nome é apenas `.gitignore`). Ele serve para o Git ignorar arquivos automáticos que o Python cria e que não devem ir para o GitHub.
+
+```text
+# Arquivos de compilação do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais (se você usar venv)
+venv/
+env/
+.env
+
+# Arquivos de dados locais (Opcional: se quiser que cada um tenha sua própria agenda.txt)
+# agenda.txt
+
+# Arquivos do PyInstaller (se você gerar o .exe)
+build/
+dist/
+*.spec
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
